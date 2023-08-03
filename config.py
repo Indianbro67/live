@@ -5,4 +5,4 @@ unban = "you were unbanned by the admin."#unban message
 text_message = "If you have any problem contact to @Black_Devil_Admin"#answering_text to user
 banned = "you are blocked"#if admin has blocked a user
 main_id = -1001631495558 #id without quotes #can be group id
-TOKEN = "6317945060:AAE8VqjA0HGWu23EtN4OBmGuPjMb7ttHZYI"#bot token
+TOKEN = "5835400119:AAG05VIHGiaNvefr3DKF4yd8bTAcZLSyxx4"#bot token
