@@ -52,4 +52,7 @@ def handle_text(message):
 def handle_other(message):
     other(message)
 
-bot.polling(none_stop=True)
+try:
+    bot.polling(none_stop=True)
+except Exception as e:
+    print("An error occurred:", e)
