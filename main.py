@@ -28,8 +28,14 @@ create_db_new()
 import config
 bot = telebot.TeleBot(config.TOKEN)
 
+# Sticker ID to be sent when the user starts the bot
+start_sticker_id = "CAACAgUAAxkBAAEJ3rdkx-mv7czAKR0AAR_OcrzAvG838cAAAucLAAIUT0FWDj56XbQhG4UvBA"
+
 @bot.message_handler(commands=['start'])
 def start2(message):
+    # Send the sticker
+    bot.send_sticker(message.chat.id, start_sticker_id)
+
     # Send image by URL and use the start variable in the caption
     image_url = "https://justpaste.it/img/small/279b70b0a58f94a0228979a8087f7ea7.jpg"  # Replace with the actual image URL
     caption = (
